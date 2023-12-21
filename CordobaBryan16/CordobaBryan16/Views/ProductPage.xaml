@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CordobaBryan16.Views.ProductPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout.Padding>
+                <OnPlatform 
+                    x:TypeArguments="Thickness"
+                    Android="20"
+                    iOS="50"/>
+            </StackLayout.Padding>
+
+            <Label 
+                Text="Nombre"/>
+            <Entry 
+                Placeholder="Nombre"
+                Text="{Binding Name}"/>
+            <Label
+                Text="Descripcion"/>
+            <Entry 
+                Placeholder="Descripcion"
+                Text="{Binding Description}"/>
+
+            <Label
+                Text="fecha de caducidad"/>
+            <Entry 
+                Placeholder="fecha de caducidad"
+                Text="{Binding ExpirationDate}"/>
+
+            <Label
+                Text="Es nuevo"/>
+            <Entry 
+                Placeholder="Es nuevo"
+                Text="{Binding IsNew}"/>
+            <Label
+                Text="Stock"/>
+            <Entry 
+                Placeholder="Stock"
+                Text="{Binding Stock}"/>
+
+            <Button
+                Text="Guardar"
+                Command="{Binding CreateCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,17 @@
+D:\CordobaBryan16\CordobaBryan16\CordobaBryan16\bin\Debug\netstandard2.0\CordobaBryan16.deps.json
+D:\CordobaBryan16\CordobaBryan16\CordobaBryan16\bin\Debug\netstandard2.0\CordobaBryan16.dll
+D:\CordobaBryan16\CordobaBryan16\CordobaBryan16\bin\Debug\netstandard2.0\CordobaBryan16.pdb
+D:\CordobaBryan16\CordobaBryan16\CordobaBryan16\obj\Debug\netstandard2.0\CordobaBryan16.csproj.AssemblyReference.cache
+D:\CordobaBryan16\CordobaBryan16\CordobaBryan16\obj\Debug\netstandard2.0\CordobaBryan16.GeneratedMSBuildEditorConfig.editorconfig
+D:\CordobaBryan16\CordobaBryan16\CordobaBryan16\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\CordobaBryan16\CordobaBryan16\CordobaBryan16\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\CordobaBryan16\CordobaBryan16\CordobaBryan16\obj\Debug\netstandard2.0\Views\ProductPage.xaml.g.cs
+D:\CordobaBryan16\CordobaBryan16\CordobaBryan16\obj\Debug\netstandard2.0\Views\ProductsPage.xaml.g.cs
+D:\CordobaBryan16\CordobaBryan16\CordobaBryan16\obj\Debug\netstandard2.0\CordobaBryan16.AssemblyInfoInputs.cache
+D:\CordobaBryan16\CordobaBryan16\CordobaBryan16\obj\Debug\netstandard2.0\CordobaBryan16.AssemblyInfo.cs
+D:\CordobaBryan16\CordobaBryan16\CordobaBryan16\obj\Debug\netstandard2.0\CordobaBryan16.csproj.CoreCompileInputs.cache
+D:\CordobaBryan16\CordobaBryan16\CordobaBryan16\obj\Debug\netstandard2.0\XamlC.stamp
+D:\CordobaBryan16\CordobaBryan16\CordobaBryan16\obj\Debug\netstandard2.0\CordobaBryan16.dll
+D:\CordobaBryan16\CordobaBryan16\CordobaBryan16\obj\Debug\netstandard2.0\refint\CordobaBryan16.dll
+D:\CordobaBryan16\CordobaBryan16\CordobaBryan16\obj\Debug\netstandard2.0\CordobaBryan16.pdb
+D:\CordobaBryan16\CordobaBryan16\CordobaBryan16\obj\Debug\netstandard2.0\ref\CordobaBryan16.dll

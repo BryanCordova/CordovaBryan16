@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CordobaBryan16.Views.ProductsPage">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <StackLayout.Padding>
+                <OnPlatform 
+                    x:TypeArguments="Thickness"
+                    Android="20"
+                    iOS="50"/>
+            </StackLayout.Padding>
+
+            <Label Text="Laboratorio16
+                    Bryan Cordova Ñahui"
+                   FontSize="Large"
+                   TextColor="#34495E"
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold" />
+
+            <Label Text="Consumo de una API - CRUD"
+                   FontSize="Large"
+                   TextColor="#1F618D"  
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold" />
+
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Agregar"
+                        HorizontalOptions="Center"
+                        VerticalOptions="CenterAndExpand"
+                        BackgroundColor="#F5B041" TextColor="White"
+                        Command="{Binding NewProductCommand}" />
+
+                <Button Text="Listar"
+                        HorizontalOptions="Center"
+                        VerticalOptions="CenterAndExpand"
+                        BackgroundColor="#48C9B0" TextColor="Black"
+                        Command="{Binding LoadProductsCommand}" />
+            </StackLayout>
+
+                <ListView
+                x:Name="celda"
+                ItemsSource="{Binding Products}"
+                HasUnevenRows="True"            
+                SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame
+                                CornerRadius="20"
+                                HasShadow="True"
+                                Margin="3">
+
+                                <StackLayout
+                                    Orientation="Vertical">
+                                    <Grid
+                                    x:Name="Item"
+                                    VerticalOptions="CenterAndExpand">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Label 
+                                            Grid.Row="0"
+                                            Grid.Column="0"
+                                            Text="ID: "
+                                            FontAttributes="Bold"/>
+
+                                        <Label
+                                            Grid.Row="0"
+                                            Grid.Column="1"
+                                            Text="{Binding id}"/>
+
+                                        <Label
+                                            Grid.Row="1"
+                                            Grid.Column="0"
+                                            Text="Nombre: "
+                                            FontAttributes="Bold"/>
+
+                                        <Label 
+                                            Grid.Row="1"
+                                            Grid.Column="1"
+                                            Text="{Binding name}"/>
+
+                                        <Label
+                                            Grid.Row="2"
+                                            Grid.Column="0"
+                                            Text="Descripcion: "
+                                            FontAttributes="Bold"/>
+
+                                        <Label 
+                                            Grid.Row="2"
+                                            Grid.Column="1"
+                                            Text="{Binding description}"/>
+
+                                        <Label
+                                            Grid.Row="3"
+                                            Grid.Column="0"
+                                            Text="Expiracion dato: "
+                                            FontAttributes="Bold"/>
+
+                                        <Label
+                                            Grid.Row="3"
+                                            Grid.Column="1"
+                                            Text="{Binding expirationDate}"/>
+
+                                        <Label
+                                            Grid.Row="4"
+                                            Grid.Column="0"
+                                            Text="Es nuevo: "
+                                            FontAttributes="Bold"/>
+
+                                        <Label
+                                            Grid.Row="4"
+                                            Grid.Column="1"
+                                            Text="{Binding isNew}"/>
+                                        <Label
+                                            Grid.Row="5"
+                                            Grid.Column="0"
+                                            Text="Stock: "
+                                            FontAttributes="Bold"/>
+
+                                        <Label
+                                            Grid.Row="5"
+                                            Grid.Column="1"
+                                            Text="{Binding stock}"/>
+                                        <Button
+                                            Grid.Row="6"
+                                            Grid.Column="0"
+                                            Text="Actualizar"                  
+                                            
+                                            
+                                            BindingContext="{Binding Source={x:Reference celda}, Path=BindingContext}" 
+                                            Command="{Binding UpdateProductCommand}"  
+                                            CommandParameter="{Binding Source={x:Reference Item}, Path=BindingContext}"
+                                                 />
+                                        <Button
+                                            Grid.Row="6"
+                                            Grid.Column="1"
+                                            Text="Eliminar"                  
+                                            
+                                            
+                                            BindingContext="{Binding Source={x:Reference celda}, Path=BindingContext}" 
+                                            Command="{Binding DeleteProductCommand}"  
+                                            CommandParameter="{Binding Source={x:Reference Item}, Path=BindingContext}"
+                                                 />
+                                    </Grid>
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
